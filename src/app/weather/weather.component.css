@@ -1,0 +1,16 @@
+table{
+    width:100%;
+}
+.search-bar-wrapper{
+    display: grid;
+    padding-bottom: 1rem;
+}
+.search-bar-wrapper  input{
+    float: right;
+    height: 26px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #E0E0E0;
+    padding-left: 16px;
+
+}

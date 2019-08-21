@@ -1,0 +1,41 @@
+<div class="search-bar-wrapper">
+  <form >
+    <input type="text"  placeholder="Search with Country Name" (keyup)="search($event.target.value)" id="myInput" />
+
+  </form>
+</div>
+<table mat-table [dataSource]="dataSource" matSort class="mat-elevation-z8">
+
+
+  <ng-container matColumnDef="Country">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Country </th>
+    <td mat-cell *matCellDef="let element" id="countryList"> {{element.Country.EnglishName}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Latitude">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Latitude </th>
+    <td mat-cell *matCellDef="let element"> {{element.GeoPosition.Latitude}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="Longitude">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Longitude </th>
+    <td mat-cell *matCellDef="let element"> {{element.GeoPosition.Longitude}} </td>
+  </ng-container>
+
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="Region">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> Latitude </th>
+    <td mat-cell *matCellDef="let element"> {{element.Region.EnglishName}} </td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="TimeZone">
+    <th mat-header-cell *matHeaderCellDef mat-sort-header> TimeZone </th>
+    <td mat-cell *matCellDef="let element"> {{element.TimeZone.Code}} </td>
+  </ng-container>
+
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns;" (click)="viewWeather(row)"></tr>
+</table>

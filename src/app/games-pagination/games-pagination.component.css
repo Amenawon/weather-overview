@@ -1,0 +1,137 @@
+    
+.trips-layout {
+    background-color: white;
+    height: 100%;
+    margin: 3.5rem;
+    border-radius: 6px;
+}
+
+.trips-label-txt {
+    margin: 3rem;
+    font-weight: 300;
+    color: #132284;
+    font-size: 25px;
+    padding-top: 2rem;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+.w3-bordered tr, .w3-table-all tr {
+    border-bottom: 1px solid #ddd
+}
+
+.w3-striped tbody tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.w3-table, .w3-table-all {
+    color: #132284;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    display: table;
+}
+
+.w3-table-all tr:nth-child(odd) {
+    background-color: #fff
+}
+
+.w3-table-all tr:nth-child(even) {
+    background-color: #f1f1f1
+}
+
+.w3-hoverable tbody tr:hover, .w3-ul.w3-hoverable li:hover {
+    background-color: #ccc
+}
+
+.w3-centered tr th, .w3-centered tr td {
+    text-align: center
+}
+
+.w3-table td, .w3-table th, .w3-table-all td, .w3-table-all th {
+    padding: 8px 8px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: top
+}
+
+.w3-table th:first-child, .w3-table td:first-child, .w3-table-all th:first-child, .w3-table-all td:first-child {
+    padding-left: 16px
+}
+
+.w3-btn, .w3-button {
+    border: none;
+    display: inline-block;
+    padding: 8px 16px;
+    vertical-align: middle;
+    overflow: hidden;
+    text-decoration: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: center;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.pagination {
+    padding-left: 32rem;
+    padding-right: 32rem;
+    margin: 0 auto;
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+}
+
+.pagination a.active {
+    background-color: #FDAB31;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {
+    background-color: #ddd;
+ }
+ button{
+    z-index:10;
+  }
+  .loader {
+    border: 5px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 5px solid #FDAB31;
+    border-bottom: 5px solid #FDAB31;
+    width: 50px;
+    height: 50px;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  .loader {
+    margin: 0 auto;
+  }
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  .search .fa-search { 
+    position: absolute;
+    top: 28px;
+    left: 65%;
+    font-size: 15px;
+  }

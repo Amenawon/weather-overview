@@ -1,0 +1,17 @@
+.example-button-row button,
+.example-button-row a {
+  margin-right: 8px;
+}
+
+.landing-page{
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+}
+.landing-page header{
+    padding-bottom: 1rem;
+    align-self: flex-start;
+}
+.landing-page header a{
+margin-right: 1rem;
+}
